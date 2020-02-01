@@ -1,0 +1,5 @@
+white: #FFFFFF
+orange: #FA4C15
+gray: #898989
+dgray: #3E3E3E
+black: #000000

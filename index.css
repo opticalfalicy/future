@@ -1,0 +1,93 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    background-image: url('./11.jpg');
+    background-size: 100% 123%;
+    
+    /* opacity: 50%; */
+}
+
+.nav-bar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav-title{
+    display: inherit;
+    width: 10%;
+    /* font-size: .5rem; */
+    text-align: center;
+}
+
+.dot{
+    color: #FA4C15;
+    font-size: 1rem;
+}
+
+.nav-links{
+    width: 50%;
+    display: inherit;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    position: relative;
+    color: #000;
+    text-decoration: none;;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    position: relative;
+    color: #000;
+    text-decoration: none;;
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FA4C15;
+    visibility: hidden;
+    /* -webkit-transform: scaleX(0); */
+    /* transform: scaleX(0); */
+    -webkit-transition: all 0.3s cubic-bezier(0.25,0.1,0.25,1);
+    transition: all 0.3s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.nav-item:hover:before {
+    visibility: visible;
+    width: 100%;
+    /* -webkit-transform: scaleX(1); */
+    /* transform: scaleX(1); */
+}
+
+.landing-card{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing-title{
+    /* width: 15%; */
+    height: 40%;
+}
+
+.landing-link{
+    height: 10%;
+    width: 10%;
+    border-color: white;
+    background: white;
+}
