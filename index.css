@@ -2,9 +2,14 @@ body{
     width: 100%;
     height: 100vh;
     background: black;
-    background-image: url('./11.jpg');
-    background-size: 100% 123%;
-    
+    font-family: Consolas,monaco,monospace; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('./11.jpg'); */
+    /* background-size: 60% 70%; */
+
     /* opacity: 50%; */
 }
 
@@ -13,7 +18,7 @@ body{
     height: 15vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end
     
 }
 
@@ -22,11 +27,16 @@ body{
     width: 10%;
     /* font-size: .5rem; */
     text-align: center;
+    align-items: flex-end;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .dot{
     color: #FA4C15;
     font-size: 1rem;
+    height: -20%;
 }
 
 .nav-links{
@@ -37,9 +47,11 @@ body{
 
 .nav-item{
     position: relative;
-    color: #000;
+    color: #898989;
     text-decoration: none;;
     cursor: pointer;
+    font-size: .6rem;
+    align-self: flex-end;
 }
 
 .nav-item:hover {
@@ -70,24 +82,122 @@ body{
     /* transform: scaleX(1); */
 }
 
-.landing-card{
-    height: 70vh;
+.nav-bar{
     width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+/* @keyframes fade{
+    from{background: black;}
+    to{background: white}
+} */
+
+.nav-title{
+    display: inherit;
+    width: 30%;
+    height: 5vh;
+    /* font-size: .5rem; */
+    text-align: center;
+    align-items: flex-end;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    animation: tit-fade 4s linear forwards;
+}
+
+/* @keyframes tit-fade{
+    from{color: white}
+    to{color: black}
+} */
+
+
+
+.dot{
+    color: #FA4C15;
+    font-size: 1rem;
+    height: -20%;
+}
+
+.nav-links{
+    width: 55%;
+    display: inherit;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    position: relative;
+    color: #898989;
+    text-decoration: none;;
+    cursor: pointer;
+    font-size: .6rem;
+    align-self: flex-end;
+    animation-name: it-fade;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/* @keyframes it-fade{
+    from{color: #898989}
+    to{color: #3E3E3E}
+} */
+
+.nav-item:hover {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    /* border-top: solid 1px white; */
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FA4C15;
+    visibility: hidden;
+    /* -webkit-transform: scaleX(0); */
+    /* transform: scaleX(0); */
+    -webkit-transition: all 0.3s cubic-bezier(0.25,0.1,0.25,1);
+    transition: all 0.3s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.nav-item:hover:before {
+    visibility: visible;
+    width: 100%;
+    /* -webkit-transform: scaleX(1); */
+    /* transform: scaleX(1); */
+}
+
+.landing-card{
+    height: 60vh;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    /* align-items: center; */
 
 }
 
 .landing-title{
     /* width: 15%; */
-    height: 40%;
+    height: 20%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .landing-link{
-    height: 10%;
-    width: 10%;
-    border-color: white;
-    background: white;
+    height: 8%;
+    width: 15%;
+    color: white;
+    border-color: #FA4C15;
+    background: #FA4C15;
 }
