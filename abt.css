@@ -217,12 +217,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 20%;
+    width: 60%;
     height: 100%;
 }
 
 .exp-r{
-    width: 50%;
+    width: 30%;
 }
 
 .exp-title{
@@ -235,7 +235,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 80%;
+    /* width: 80%; */
     font-size: .7rem;
     height: 90%;
     /* list-style: square; */
@@ -243,7 +243,7 @@ body{
 
 .exp-item{
     list-style: square;
-    width: 100%;
+    /* width: 100%; */
     padding-left: 5%;
 
 }
@@ -263,6 +263,7 @@ body{
     justify-content: space-evenly;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
+    height: 45vh;
 }
 
 @keyframes op-fade{
@@ -275,15 +276,25 @@ body{
 }
 
 .news-r{
-    width: 50%;
+    width: 30%;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
 }
 
 .news-pic{
     /* width: 50%; */
 }
 
+.news-title{
+    font-size: 1rem;
+}
+
 .news-prev{
-    font-size: .8rem;
+    font-size: .7rem;
+    /* padding: 0 2%; */
     /* width: 50%; */
 }
 
@@ -291,9 +302,26 @@ body{
 
 .hire-card{
     display: flex;
+    justify-content: space-evenly;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
+    width: 80%;
+    height: 30vh;
 }
+
+.hire-l{
+    width: 40%;
+}
+
+.hire-r{
+    width: 20%;
+}
+
+.hire-txt{
+    font-size: .8rem;
+    /* width: 40%; */
+}
+
 
 @keyframes op-fade{
     from{opacity: 0%;}
