@@ -121,7 +121,7 @@ body{
 .abt-card{
     display: flex;
     align-items: center;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     opacity: 0;
     animation: op-fade 4s 1s forwards;
@@ -172,6 +172,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     animation: op-fade 4s 1s forwards;
+    width: 92%;
 }
 
 @keyframes op-fade{
@@ -180,7 +181,7 @@ body{
 }
 
 .stat-item{
-    width: 5%;
+    width: 10%;
     height: 25%;
 }
 
@@ -188,12 +189,13 @@ body{
     /* width: ; */
     height: 80%;
     color: #FA4C15;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
 .stat-text{
     font-size: .7rem;
-    width: 100%;
+    width: 130%;
     text-align: left;
 }
 
