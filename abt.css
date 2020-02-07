@@ -121,7 +121,7 @@ body{
 .abt-card{
     display: flex;
     align-items: center;
-    height: 45vh;
+    height: 40vh;
     width: 100%;
     opacity: 0;
     animation: op-fade 4s 1s forwards;
@@ -167,12 +167,12 @@ body{
 
 .stat-card{
     display: flex;
-    height: 40vh;
+    height: 38vh;
     opacity: 0;
     align-items: center;
     justify-content: space-evenly;
     animation: op-fade 4s 1s forwards;
-    width: 92%;
+    width: 85%;
 }
 
 @keyframes op-fade{
@@ -194,7 +194,7 @@ body{
 }
 
 .stat-text{
-    font-size: .7rem;
+    font-size: .8rem;
     width: 130%;
     text-align: left;
 }
@@ -204,8 +204,8 @@ body{
 .exp-card{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    height: 40vh;
+    width: 75%;
+    height: 60vh;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
 }
@@ -218,46 +218,62 @@ body{
 .exp-l{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 60%;
-    height: 100%;
+    height: 95%;
 }
 
-.exp-r{
-    width: 30%;
-}
 
 .exp-title{
-    font-weight: 600;
-    font-size: 1.7rem;
-    height: 15%;
+    font-weight: 900;
+    font-size: 2rem;
+    width: 65%;
+    /* height: 10%; */
 }
 
 .exp-list{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* width: 80%; */
-    font-size: .7rem;
-    height: 90%;
-    /* list-style: square; */
+    width: 60%;
+    font-size: .9rem;
+    height: 60%;
 }
 
 .exp-item{
-    list-style: square;
+    /* list-style-image: url('./ordt.png'); */
+    /* list-style-position: outside; */
     /* width: 100%; */
     padding-left: 5%;
+    list-style: none;
+    
+}
 
+.exp-item::before{
+    content: '•';
+    color: #FA4C15;
+    display: inline-block;
+    width: .8rem;
+    margin-left: -.1em;
 }
 
 .exp-link{
-    height: 12%;
-    width: 50%;
+    height: 10%;
+    width: 30%;
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
 }
 
+.exp-r{
+    width: 60%;
+}
+
+.exp-pic{
+    width: 125%;
+    height: 100%;
+}
 /* ----------------------- news -------------------- */
 
 .news-card{
@@ -265,7 +281,7 @@ body{
     justify-content: space-evenly;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
-    height: 45vh;
+    height: 60vh;
 }
 
 @keyframes op-fade{
@@ -274,12 +290,15 @@ body{
 }
 
 .news-l{
-    width: 50%;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .news-r{
     width: 30%;
-    /* height: 30vh; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -287,11 +306,12 @@ body{
 }
 
 .news-pic{
-    /* width: 50%; */
+    width: 125%;
+    height: 60%;
 }
 
 .news-title{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .news-prev{
