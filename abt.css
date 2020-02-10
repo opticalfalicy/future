@@ -121,7 +121,7 @@ body{
 .abt-card{
     display: flex;
     align-items: center;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     opacity: 0;
     animation: op-fade 4s 1s forwards;
@@ -149,25 +149,29 @@ body{
 .abt-r{
     background: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .abt-title{
     width: 50%;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     height: 20%;
 }
 
 .abt-txt{
     width: 50%;
-    font-size: .59rem;
+    font-size: .69rem;
 }
 
 /* ----------------------- stats -------------------- */
 
 .stat-card{
     display: flex;
-    height: 38vh;
+    /* height: 38vh; */
+    height: 40vh;
     opacity: 0;
     align-items: center;
     justify-content: space-evenly;
@@ -204,8 +208,8 @@ body{
 .exp-card{
     display: flex;
     justify-content: space-evenly;
-    width: 75%;
-    height: 60vh;
+    width: 74%;
+    height: 65vh;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
 }
@@ -220,8 +224,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 60%;
-    height: 95%;
+    width: 40%;
+    height: 100%;
 }
 
 
@@ -238,7 +242,7 @@ body{
     justify-content: space-evenly;
     width: 60%;
     font-size: .9rem;
-    height: 60%;
+    height: 55%;
 }
 
 .exp-item{
@@ -260,14 +264,14 @@ body{
 
 .exp-link{
     height: 10%;
-    width: 30%;
+    width: 38%;
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
 }
 
 .exp-r{
-    width: 60%;
+    width: 65%;
 }
 
 .exp-pic{
@@ -281,7 +285,7 @@ body{
     justify-content: space-evenly;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
-    height: 60vh;
+    height: 90vh;
 }
 
 @keyframes op-fade{
@@ -290,7 +294,7 @@ body{
 }
 
 .news-l{
-    width: 33%;
+    width: 31%;
     height: 100%;
     display: flex;
     align-items: flex-end;
@@ -306,16 +310,23 @@ body{
 }
 
 .news-pic{
-    width: 125%;
-    height: 60%;
+    width: 124%;
+    /* height: 60%; */
+    height: 75vh;
 }
 
 .news-title{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+}
+
+.news-subtitle{
+    height: 0%
 }
 
 .news-prev{
-    font-size: .7rem;
+    font-size: .85rem;
+    line-height: 1.5;
+    height: 25%;
     /* padding: 0 2%; */
     /* width: 50%; */
 }
