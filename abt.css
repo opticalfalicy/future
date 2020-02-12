@@ -20,6 +20,7 @@ body{
     to{background: white}
 }
 
+
 /* ----------------------- navbar -------------------- */
 
 .nav-bar{
@@ -116,6 +117,7 @@ body{
     /* transform: scaleX(1); */
 }
 
+
 /* ----------------------- about -------------------- */
 
 .abt-card{
@@ -164,6 +166,15 @@ body{
 .abt-txt{
     width: 50%;
     font-size: .69rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 /* ----------------------- stats -------------------- */
@@ -225,7 +236,7 @@ body{
     justify-content: space-around;
     align-items: flex-start;
     width: 40%;
-    height: 100%;
+    height: 95%;
 }
 
 
@@ -275,7 +286,7 @@ body{
 }
 
 .exp-pic{
-    width: 125%;
+    width: 100%;
     height: 100%;
 }
 /* ----------------------- news -------------------- */
@@ -336,10 +347,11 @@ body{
 .hire-card{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
     width: 80%;
-    height: 30vh;
+    height: 60vh;
 }
 
 .hire-l{
@@ -366,6 +378,8 @@ body{
 
 .sub-card{
     display: flex;
+    flex-direction: column;
+    height: 40vh;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
 }
@@ -378,14 +392,108 @@ body{
 /* ----------------------- footer -------------------- */
 
 .footer-bar{
+    width: 100%;
+    height: 15vh;
     display: flex;
-    animation: op-fade 4s 1s forwards;
-    opacity: 0;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: foot-fade;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes op-fade{
+@keyframes foot-fade{
+    from{background: white}
+    to{background: black;}
+}
+
+.footer-title{
+    display: inherit;
+    width: 30%;
+    height: 5vh;
+    /* font-size: .5rem; */
+    text-align: center;
+    align-items: flex-end;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    animation: foot-tit-fade 4s linear forwards;
+}
+
+/* .footer-bar{
+    display: flex;
+    animation: foot-op-fade 4s 1s forwards;
+    opacity: 0;
+} */
+
+@keyframes foot-op-fade{
     from{opacity: 0%;}
     to{opacity: 100%;}
+}
+
+@keyframes foot-tit-fade{
+    from{color: black}
+    to{color: white}
+}
+
+
+
+.dot{
+    color: #FA4C15;
+    font-size: 1rem;
+    height: -20%;
+}
+
+.footer-links{
+    width: 55%;
+    display: inherit;
+    justify-content: space-evenly;
+}
+
+.footer-item{
+    position: relative;
+    color: #3E3E3E;
+    text-decoration: none;;
+    cursor: pointer;
+    font-size: .6rem;
+    align-self: flex-end;
+    animation-name: it-fade;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes it-fade{
+    from{color: #898989}
+    to{color: #3E3E3E}
+}
+
+.footer-item:hover {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    /* border-top: solid 1px white; */
+}
+
+.footer-item:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FA4C15;
+    visibility: hidden;
+    /* -webkit-transform: scaleX(0); */
+    /* transform: scaleX(0); */
+    -webkit-transition: all 0.3s cubic-bezier(0.25,0.1,0.25,1);
+    transition: all 0.3s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.footer-item:hover:before {
+    visibility: visible;
+    width: 100%;
+    /* -webkit-transform: scaleX(1); */
+    /* transform: scaleX(1); */
 }
 
 .footer-links{
