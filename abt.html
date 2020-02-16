@@ -13,27 +13,28 @@
     <section class="nav-bar">
         <h1 class="nav-title">Intelligent<p class='dot'>.</p></h1>
         <ul class="nav-links">
-            <li class="nav-item">Expertise</li>
-            <li class="nav-item">About</li>
-            <li class="nav-item">Case Studies</li>
-            <li class="nav-item">Blog</li>
-            <li class="nav-item">Contacts</li>
-            <li class="nav-item">Careers</li>
+            <li class="nav-item"><a href='#abt'>About</a></li>
+            <li class="nav-item"><a href='#sts'>Stats</a></li>
+            <li class="nav-item"><a href='#exp'>Expertise</a></li>
+            <li class="nav-item"><a href='#blog'>Blog</a></li>
+            <li class="nav-item"><a href='#car'>Careers</a></li>
+            <li class="nav-item"><a href='#cnt'>Contacts</a></li>
         </ul>
     </section>
-    <section class="abt-card">
+    <!-- <div class="main"> -->
+    <section id='abt' class="abt-card">
         <div class="abt-l">
+            <!-- <h3 class="abt-title">What About Us?</h3>  -->
+            <p class="abt-txt" id='txt-1'>What About Us?</p>
+            <p class="abt-txt" id='txt-2'>Intelligent company provides premium software engineering services to leading technology companies</p>
+        </div>
+        <!-- <div class="abt-r">
             <h3 class="abt-title">What About Us?</h3>
             <p class="abt-txt">Intelligent company provides premium software engineering services to leading technology companies</p>
-        </div>
-        <div class="abt-r">
-            <h3 class="abt-title">What About Us?</h3>
-            <p class="abt-txt">Intelligent company provides premium software engineering services to leading technology companies</p>
-        </div>
+        </div> -->
     </section>
-    <div class="main">
-    <section class="stat-card">
-        <div class="stat-item">
+    <section id='sts' class="stat-card">
+        <div class="stat-item" id='stat-1'>
             <div class="stat-num">724</div>
             <div class="stat-text">Great professionals</div>
         </div>
@@ -50,7 +51,7 @@
             <div class="stat-text">Worldwide development centers</div>
         </div>
     </section>
-    <section class="exp-card">
+    <section id='exp' class="exp-card">
         <div class="exp-l">
             <h4 class="exp-title">Expertise</h4>
             <ul class="exp-list">
@@ -71,7 +72,7 @@
             <img alt='office' class="exp-pic" src='./her.jpg' />
         </div>
     </section>
-    <section class="news-card">
+    <section id='blog' class="news-card">
         <div class="news-l">
             <img alt='laptop' class="news-pic" src='./lap.jpg' />
         </div>
@@ -83,10 +84,12 @@
                 <h5 class="subtitle-head">Reduced Testing Time by 50%</h5>
             </div>
             <div class='news-prev'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
-            <button class="news-link"></button>
+            <div class="news-button">
+                <button class="news-link">View More News</button>
+            </div>
         </div>
     </section>
-    <section class="hire-card">
+    <section id='car' class="hire-card">
         <div class="hire-l">
             <h4 class="hire-title">We're hiring</h4>
             <p class="hire-txt">In 2017, Seeking ALpha had no QA team. New versions of apps had to be tested by the developers and the product team.</p>
@@ -100,8 +103,8 @@
             </ul>
         </div>
     </section>
-</div>
-    <section class="sub-card">
+<!-- </div> -->
+    <section id='cnt' class="sub-card">
         <h4 class="sub-title">Subscribe to our newsletters</h4>
         <p class="sub-text">Get notified about company updates, news, and blog</p>
         <form class="sub-form">
