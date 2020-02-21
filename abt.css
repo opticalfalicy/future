@@ -468,7 +468,7 @@ body{
 
 .news-r{
     width: 100%;
-    height: 90%;
+    height: 91%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -480,7 +480,7 @@ body{
 
 .news-title{
     font-size: 1.9rem;
-    height: 0%;
+    height: 1%;
 }
 
 .news-subtitle{
@@ -500,11 +500,11 @@ body{
     display: flex;
     width:80%;
     justify-content: center;
-    height: 5%;
+    height: 0%;
 }
 
 .news-link{
-    height: 150%;
+    height: 60px;
     width: 35%;
     color: white;
     border-color: #FA4C15;
@@ -529,11 +529,11 @@ body{
 }
 
 .hire-l{
-    width: 30%;
+    width: 75%;
     height: 90%;
     display: flex;
     justify-content: space-evenly;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 .hire-title{
@@ -556,8 +556,8 @@ body{
 }
 
 .hire-r{
-    width: 50%;
-    height: 100%;
+    width: 80%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -1246,6 +1246,7 @@ body{
 
 .hire-card{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     animation: op-fade 4s 1s forwards;
