@@ -426,7 +426,7 @@ body{
 
 .exp-link{
     height: 100%;
-    width: 50%;
+    width: 30%;
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
@@ -524,8 +524,10 @@ body{
     flex-direction: column;
     animation: op-fade 4s 1s forwards;
     opacity: 0;
-    width: 95%;
+    width: 100%;
     /* height: 40vh; */
+    background: black;
+    color: white;
 }
 
 .hire-l{
@@ -551,8 +553,8 @@ body{
 }
 
 .hire-button{
-    height: 12.805%;
-    width: 30%;
+    height: 10.805%;
+    width: 35%;
     /* border-radius: 50%; */
     color: white;
     border-color: #FA4C15;
@@ -719,7 +721,7 @@ body{
     /* color: white; */
     text-decoration: none;;
     cursor: pointer;
-    font-size: .5rem;
+    font-size: .6rem;
     height: 5%;
     align-self: flex-end;
     /* animation-name: it-fade; */
@@ -771,6 +773,32 @@ body{
     color: white;
 }
 
+
+@media screen and (min-width: 360px){
+    .news-prev{
+        height: 35%;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .sub-title{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 414px){
+    .nav-bar{
+        height: 10vh;
+    }
+
+    .footer-title{
+        width: 15%;
+    }
+
+    .footer-links{
+        width: 90%;
+    }
+}
 
 @media screen and (min-width: 1000px){
 
@@ -1027,7 +1055,7 @@ body{
     justify-content: space-between;
     flex-direction: column;
     animation: op-fade 4s 1s forwards;
-    width: 150%;
+    width: 100%;
     overflow: scroll;
 }
 
@@ -1265,6 +1293,7 @@ body{
     opacity: 0;
     width: 85%;
     height: 40vh;
+    background: white;
 }
 
 .hire-l{
@@ -1284,11 +1313,12 @@ body{
     font-size: .8rem;
     /* width: 40%; */
     height: 30%;
+    text-align: left;
 }
 
 .hire-button{
-    height: 20%;
-    width: 32%;
+    height: 19%;
+    width: 47.7%;
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
@@ -1385,6 +1415,7 @@ body{
     height: 15vh;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     animation-name: foot-fade;
     animation-duration: 3s;
@@ -1435,6 +1466,7 @@ body{
 
 .footer-links{
     width: 55%;
+    height: 5%;
     display: inherit;
     justify-content: space-evenly;
 }
