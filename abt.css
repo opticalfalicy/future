@@ -673,7 +673,9 @@ body{
 
 .footer-title{
     display: inherit;
-    width: 25%;
+    /* width: 25%; */
+    width: 100%;
+    justify-content: center;
     height: 2vh;
     /* font-size: .5rem; */
     text-align: center;
@@ -778,17 +780,63 @@ body{
     .news-prev{
         height: 35%;
     }
+    
+    .stat-text{
+        font-size: 2rem;
+    }
+
+    .exp-list{
+        font-size: .8rem;
+    }
 }
 
 @media screen and (min-width: 375px){
+    .nav-bar{
+        height: 10vh;
+    }
+    .nav-item{
+        font-size: .6rem;
+    }
+    .news-prev{
+        height: 40%;
+        font-size: .9rem;
+    }
+    .hire-txt{
+        font-size: 1rem;
+    }
     .sub-title{
         font-size: 1.3rem;
     }
 }
 
-@media screen and (min-width: 414px){
+@media screen and (min-width: 400px){
     .nav-bar{
         height: 10vh;
+    }
+
+    .nav-item{
+        font-size: .65rem;
+    }
+
+    .news-prev{
+        font-size: .9rem;
+    }
+
+    .exp-list{
+        font-size: .9rem;
+    }
+
+    .hire-title{
+        height: 15%l
+    }
+
+    .hire-txt{
+        font-size: 1.2rem;
+        height: 35%;
+    }
+
+    .sub-card{
+        height: 70vh;
     }
 
     .footer-title{
@@ -800,7 +848,162 @@ body{
     }
 }
 
+@media screen and (min-width: 760px){
+    .nav-title{
+        font-size: 1.7rem;
+    }
+
+    .nav-item{
+        font-size: .8rem;
+    }
+
+    .stat-text{
+        font-size: 4rem;
+    }
+
+    .exp-title{
+        font-size: 5rem;
+    }
+
+    .exp-list{
+        font-size: 1.4rem;
+    }
+
+    .exp-link{
+        font-size: 1.5rem;
+    }
+
+    .news-title{
+        font-size: 5rem;
+    }
+
+    .news-subtitle{
+        font-size: 2rem;
+    }
+
+    .news-prev{
+        font-size: 1.4rem;
+    }
+    
+    .news-link{
+        height: 75px;
+        font-size: 1rem;
+    }
+
+    .hire-title{
+        font-size: 5rem;
+    }
+
+    .hire-txt{
+        font-size: 1.8rem;
+        height: 40%;
+    }
+
+    .hire-button{
+        font-size: 1.5rem;
+    }
+
+    .hire-item{
+        font-size: 1.2rem;
+    }
+
+    .sub-title{
+        font-size: 4.5rem;
+    }
+
+    .sub-text{
+        font-size: 2rem;
+        width: 70%;
+    }
+    
+    .sub-inp{
+        font-size: 1.2rem;
+    }
+
+    .sub-button{
+        font-size: 1.2rem;
+    }
+
+    .footer-title{
+        font-size: 2rem;
+    }
+    
+    .footer-item{
+        font-size: 1rem;
+    }
+
+}
+
 @media screen and (min-width: 1000px){
+    .nav-item{
+        font-size: 1.3rem;
+    }
+
+    #txt-1{
+        font-size: 4rem;
+    }
+
+    #txt-2{
+        font-size: 3.2rem;
+    }
+
+    .stat-num{
+        font-size: 12rem;
+    }
+
+    .stat-text{
+        font-size: 5.5rem;
+        width: 95%;
+    }
+
+    .exp-list{
+        font-size: 1.9rem;
+    }
+    
+    .exp-item::before{
+        padding-right: 10px;
+    }
+
+    .news-prev{
+        font-size: 1.95rem;
+        height: 35%;
+    }
+
+    .news-link{
+        height: 100px;
+        font-size: 1.8rem;
+    }
+
+    .hire-txt{
+        font-size: 2.5rem;
+        height: 35%;
+    }
+
+    .hire-item{font-size: 1.9rem;}
+
+    .sub-text{
+        font-size: 1.5rem;
+    }
+
+    .sub-inp{
+        font-size: 2rem;
+    }
+
+    .sub-button{
+        font-size: 1.8rem;
+    }
+
+    .footer-title{
+        font-size: 3rem;
+    }
+
+    .footer-item{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
 
 /* ----------------------- navbar -------------------- */
 
@@ -860,7 +1063,7 @@ body{
     color: #3E3E3E;
     text-decoration: none;;
     cursor: pointer;
-    font-size: .6rem;
+    font-size: .7rem;
     align-self: flex-end;
     animation-name: it-fade;
     animation-duration: 6s;
@@ -1162,7 +1365,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 56%;
+    width: 48%;
     font-size: 1rem;
     height: 55%;
 }
@@ -1196,6 +1399,7 @@ body{
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
+    font-size: 1.2rem;
 }
 
 .exp-r{
@@ -1253,6 +1457,7 @@ body{
 
 .news-subtitle{
     height: 0%;
+    font-size: 1.2rem;
 }
 
 .news-prev{
@@ -1276,6 +1481,7 @@ body{
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
+    font-size: 1rem;
 }
 
 /* ----------------------- hire -------------------- */
@@ -1294,6 +1500,7 @@ body{
     width: 85%;
     height: 40vh;
     background: white;
+    color: black;
 }
 
 .hire-l{
@@ -1322,6 +1529,7 @@ body{
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
+    font-size: 1.1rem;
 }
 
 .hire-r{
@@ -1347,6 +1555,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1rem;
 }
 
 .job-desc{
@@ -1393,6 +1602,7 @@ body{
 .sub-inp{
     opacity: .8;
     width: 60%;
+    font-size: 1rem;
 }
 
 .sub-button{
@@ -1401,6 +1611,7 @@ body{
     color: white;
     border-color: #FA4C15;
     background: #FA4C15;
+    font-size: 1rem;
 }
 
 @keyframes op-fade{
@@ -1482,6 +1693,7 @@ body{
     /* animation-name: it-fade; */
     animation-duration: 6s;
     animation-fill-mode: forwards;
+    font-size: .8rem;
 }
 
 /* @keyframes it-fade{
