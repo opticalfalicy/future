@@ -25,6 +25,11 @@ body{
     /* opacity: 50%; */
 }
 
+a {
+/*     text-decoration: none; */
+    color: #3E3E3E;
+}
+
 @keyframes fade{
     from{background: black;}
     to{background: white}
